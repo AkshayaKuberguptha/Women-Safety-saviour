@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Phonecall"
+    android:background="@drawable/img_6">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="567dp"
+        android:src="@drawable/img_18"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="180dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/makecall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="210dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Make Call" />
+
+        <Button
+            android:id="@+id/SOS_Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/makecall"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="SOS Service" />
+
+        <Button
+            android:id="@+id/Schemes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Schemes"
+            />
+
+        <Button
+            android:id="@+id/MMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="MMB"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

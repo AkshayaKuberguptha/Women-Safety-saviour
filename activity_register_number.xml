@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_6"
+    android:layout_height="match_parent"
+    tools:context=".RegisterNumberActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="575dp"
+        android:src="@drawable/img_21"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="200dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="333dp"
+        android:layout_height="308dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/varela_round"
+            android:text="Enter Number To\nSend SMS\nin\nEMERGENCY!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/text1"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/numberEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/varela_round"
+                android:hint="Number"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textAlignment="center" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/number"
+
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="@font/varela_round"
+            android:onClick="saveNumber"
+            android:text="Finish"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

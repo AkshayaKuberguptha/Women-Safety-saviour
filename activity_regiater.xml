@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Regiater"
+    android:background="@drawable/img_6">
+
+    <TextView
+        android:id="@+id/Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/black"
+        android:fontFamily="@font/varela_round"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="190dp"/>
+
+    <ImageView
+        android:id="@+id/Reg_Image"
+        android:layout_width="155dp"
+        android:layout_height="367dp"
+        android:layout_below="@+id/Registration"
+        android:src="@drawable/img_4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="227dp"
+        android:layout_below="@+id/Registration"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="67dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Reg_Username"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="120dp"
+
+            android:hint="Enter the Name" />
+
+        <EditText
+            android:id="@+id/Reg_Password"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/Reg_Username"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:hint="Enter the Password" />
+
+        <EditText
+            android:id="@+id/Reg_Email"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/Reg_Password"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your EmailID" />
+
+        <EditText
+            android:id="@+id/Reg_PhNumber"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/Reg_Email"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your PhNumber" />
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/Reg_Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="@font/varela_round"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

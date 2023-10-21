@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img_6"
+    android:layout_margin="12dp"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:text="email"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/user_name"
+        android:textColor="#FF4500"
+        android:id="@+id/user_email"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="48dp"
+        android:onClick="email_msg"/>
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textColor="#FF4500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:text="Age"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@id/user_email"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#FF4500"
+        android:id="@+id/user_age"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:text="healthissue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#FF4500"
+        android:id="@+id/user_healtheissue"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="130dp"
+        android:text="medication_ad"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/user_healtheissue"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#FF4500"
+        android:id="@+id/user_medicationad"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

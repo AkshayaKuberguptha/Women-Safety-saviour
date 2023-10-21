@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".email"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/img_6">
+
+    <TextView
+        android:id="@+id/to_text"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="To:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/to"
+        android:layout_below="@+id/to_text"
+        />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="Subject:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/to"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailSubject"
+        android:id="@+id/sub"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:gravity="start|top"
+        android:lines="10" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="send" />
+
+
+</LinearLayout>

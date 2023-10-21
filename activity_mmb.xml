@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MMB"
+    android:background="@drawable/img_6">
+
+    <TextView
+        android:id="@+id/MMB_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="MOTHER'S MILK BANK"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/donor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Donate"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="647dp"
+        app:srcCompat="@drawable/img_28"
+        android:layout_marginLeft="20dp"/>
+
+
+
+</RelativeLayout>

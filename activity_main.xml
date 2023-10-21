@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_6"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="575dp"
+        android:src="@drawable/img_23"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="375dp"
+        android:src="@drawable/img_22"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="145dp"/>
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="PopupMenu"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_baseline_more_vert_24"
+        android:backgroundTint="@color/black"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="40dp"
+            android:text="SOS Will Be Sent To\n"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textNum"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:onClick="startServiceV"
+            android:text="Start"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stop"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/teal_700"
+            android:onClick="stopService"
+            android:text="stop"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/start" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
